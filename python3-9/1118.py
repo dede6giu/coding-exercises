@@ -18,19 +18,16 @@ while True:
 				print('nota invalida')
 
 	# continue prompt
-	inWait = 0
-	while inWait == 0:
-		print('novo calculo (1-sim 2-nao)')
+	while True:
 		try:
-			inWait = int(input())
-			if inWait == 1 or inWait == 2:
+			repeat = int(input('novo calculo (1-sim 2-nao)\n'))
+			if repeat == 1 or repeat == 2:
 				break
 			else:
-				inWait = 0
 				continue
 		except:
 			continue
-	if inWait == 1:
+	if repeat == 1:
 		continue
 	else:
 		break
