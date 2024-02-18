@@ -3,7 +3,7 @@
 using namespace std;
  
 int main() {
-    int r, v, hcd, n = 1;
+    int r, v, n = 1;
 
     cin >> n;
 
@@ -22,37 +22,22 @@ int main() {
             cout << r << "\n";
             n--;
             continue;
-        } else if (r > v) {
-            hcd = v / 2;
-        } else if (v > r) {
-            hcd = r / 2;
-        } else {
+        } else if (r == v) {
             cout << r << "\n";
             n--;
             continue;
         }
 
-        if (r % 2 == 0 and v % 2 == 0) {
-            while (r % hcd != 0 or v % hcd != 0) {
-                if (hcd <= 1) {
-                    break;
-                }
-                hcd--;
-            }
-        } else {
-            if (hcd % 2 == 0) {
-                hcd--;
-            }
-            while (r % hcd != 0 or v % hcd != 0) {
-                if (hcd <= 1) {
-                    break;
-                }
-                hcd -= 2;
+        while (r != v) {
+            if (r > v) {
+                r -= v;
+            } else {
+                v -= r;
             }
         }
 
 
-        cout << hcd << "\n";
+        cout << r << "\n";
         n--;
     }
     return 0;
