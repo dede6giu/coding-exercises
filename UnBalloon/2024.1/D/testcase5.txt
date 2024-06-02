@@ -1,0 +1,8 @@
+==== INPUT ====
+8
+CCCCCCCC
+
+
+==== OUTPUT ====
+11
+C.....L...L

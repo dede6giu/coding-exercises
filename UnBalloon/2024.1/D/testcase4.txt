@@ -1,0 +1,8 @@
+==== INPUT ====
+6
+AABCAB
+
+
+==== OUTPUT ====
+12
+..B.C.A.LB.L

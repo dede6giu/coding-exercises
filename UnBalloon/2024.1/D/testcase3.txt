@@ -1,0 +1,8 @@
+==== INPUT ====
+12
+ABCCBBBABACC
+
+
+==== OUTPUT ====
+22
+.B.C..B.L..A.B.A.LC..L

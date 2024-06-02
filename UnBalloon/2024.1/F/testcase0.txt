@@ -1,0 +1,8 @@
+==== INPUT ====
+5
+ABBAA
+
+
+==== OUTPUT ====
+8
+.B..A..L
