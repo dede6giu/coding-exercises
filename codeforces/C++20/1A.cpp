@@ -1,23 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+typedef long long ll;
+typedef unsigned long long ull;
+
 int main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-    
-    long long n, m, a, auxn, auxm;
 
+    ll n, m, a;
     cin >> n >> m >> a;
 
-    auxn = n / a;
-    if (n % a != 0) {
-        auxn++;
-    }
-    auxm = m / a;
-    if (m % a != 0) {
-        auxm++;
-    }
+    ll nn = n / a;
+    ll mm = m / a;
 
-    cout << auxn * auxm << "\n";
+    if (n%a > 0) nn++;
+    if (m%a > 0) mm++;
+
+    cout << nn*mm << "\n";
 
     return 0;
 }
